@@ -1,3 +1,13 @@
+/* 
+Breakpoint naming: 
+xs - default (<480px)
+sm - min-width: 480px
+md - min-width: 736px
+lg - min-width: 980px
+xl - min-width: 1280px
+hg - min-width: 1680px
+*/
+
 /*\\\\\\\\\\\\\ global \\\\\\\\\\\\\*/
 
 @import 'https://fonts.googleapis.com/css?family=Raleway:100,300,600';
@@ -33,7 +43,160 @@ body {
     }
 }
 
+@media screen and (min-width: 736px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        width: 75rem;
+    }
+}
+
 /*\\\\\\\\\\\\\ end container \\\\\\\\\\\\\*/
+/*\\\\\\\\\\\\\ columns \\\\\\\\\\\\\*/
+
+.no-row {
+    display: block;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-half {
+    width: calc((100% - 2rem) / 2);
+}
+
+.col-third {
+    width: calc((100% - 4rem) / 3);
+}
+
+/* columns Media Queries */
+
+@media screen and (min-width: 480px) {
+    .sm-no-row {
+        display: block;
+    }
+
+    .sm-row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sm-col-full {
+        width: 100%;
+    }
+
+    .sm-col-half {
+        width: calc((100% - 2rem) / 2);
+    }
+
+    .sm-col-third {
+        width: calc((100% - 4rem) / 3);
+    }
+}
+
+@media screen and (min-width: 736px) {
+    .md-no-row {
+        display: block;
+    }
+
+    .md-row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .md-col-full {
+        width: 100%;
+    }
+
+    .md-col-half {
+        width: calc((100% - 2rem) / 2);
+    }
+
+    .md-col-third {
+        width: calc((100% - 4rem) / 3);
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .lg-no-row {
+        display: block;
+    }
+
+    .lg-row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .lg-col-full {
+        width: 100%;
+    }
+
+    .lg-col-half {
+        width: calc((100% - 2rem) / 2);
+    }
+
+    .lg-col-third {
+        width: calc((100% - 4rem) / 3);
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .xl-no-row {
+        display: block;
+    }
+
+    .xl-row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .xl-col-full {
+        width: 100%;
+    }
+
+    .xl-col-half {
+        width: calc((100% - 2rem) / 2);
+    }
+
+    .xl-col-third {
+        width: calc((100% - 4rem) / 3);
+    }
+}
+
+@media screen and (min-width: 1680px) {
+    .hg-no-row {
+        display: block;
+    }
+
+    .hg-row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hg-col-full {
+        width: 100%;
+    }
+
+    .hg-col-half {
+        width: calc((100% - 2rem) / 2);
+    }
+
+    .hg-col-third {
+        width: calc((100% - 4rem) / 3);
+    }
+}
+
+/*\\\\\\\\\\\\\ end columns \\\\\\\\\\\\\*/
 /*\\\\\\\\\\\\\ header \\\\\\\\\\\\\*/
 
 header {
@@ -319,6 +482,15 @@ footer {
     border-top: 1px solid #dbdbdb;
     font-size: 0.8rem;
     text-align: center;
+}
+
+/* footer Media Queries */
+
+@media screen and (min-width: 736px) {
+    .footer-content {
+        padding-top: 3rem;
+        text-align: left;
+    }
 }
 
 /*\\\\\\\\\\\\\ end footer \\\\\\\\\\\\\*/
